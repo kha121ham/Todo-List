@@ -8,7 +8,7 @@ const jwt = require('jsonwebtoken');
 const config = require('config');
 //@route    GET  api/auth
 //desc      get user info
-//access    public
+//access    private
 router.get("/", auth, async (req, res) => {
   //Get all user data by ID from database
   try {
